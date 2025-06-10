@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudoku Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="Screenshot 2025-06-04 132501.png" alt="brain image" class="brain">
+    <h1>Sudoku Master</h1>
+    <p>Challenge Your Brain</p>
+  </header>
+
+  <main>
+    <div id="difficulty">
+      <button onclick="generatePuzzle('easy')" class="easy">Easy</button>
+      <button onclick="generatePuzzle('medium')" class="medium">Medium</button>
+      <button onclick="generatePuzzle('hard')" class="hard">Hard</button>
+      <div id="stats">
+        <p>Total Puzzles Solved: <span id="total-solved">0</span></p>
+        <p>Fastest Time: <span id="fastest-time">--:--</span></p>
+        <button onclick="resetStats()" class="reset">Reset Stats</button>
+      </div>
+    </div>
+    <p id="timer">Time: 00:00</p>
+    <div id="sudoku-board"></div>
+    <div class="controls">
+      <button onclick="checkSolution()" class="violet">Check Solution</button>
+      <button onclick="resetBoard()" class="violet">Reset</button>
+      <button onclick="generatePuzzle()" class="violet">New Game</button>
+      <button onclick="giveHint()" class="violet">Hint</button>
+      <button onclick="toggleDarkMode()" class="violet">🌙 Toggle Dark Mode</button>
+    </div>
+    <div id="message"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

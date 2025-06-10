@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+  }
+  
+  header {
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+  
+  #sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    justify-content: center;
+    margin: 20px auto;
+    border: 2px solid #555;
+    padding: 5px;
+    background-color: #1e1e1e;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #999;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .cell.prefilled {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+  
+  .controls {
+    margin: 20px;
+  }
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+  }
+  
+  #error {
+    color: red;
+  }
+  
+  #success {
+    color: green;
+  }
+.brain{
+  height: 60px;
+  width: 80px;
+  border-radius: 50%;
+}  
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode input.cell {
+  background-color: #2c2c2c !important;
+  color: #ffffff 
+  !important;
+  border: 1px solid #777 !important;
+  caret-color: white;
+}
+
+body.dark-mode .cell.prefilled {
+  background-color: #444;
+  color: #bbbbbb;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}  
+input.cell:invalid,
+input.cell.invalid {
+  background-color: #ffcccc;
+}
+
+body.dark-mode input.cell{
+  background-color: #2c2c2c!important;
+  color: #ffffff !important;
+  border: 1px solid #777 !important;
+}
+body.dark-mode input.cell.valid {
+  background-color: #2c2c2c !important;  /* same as normal dark cell */
+}
+
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.easy{
+  background-color: yellow;
+  color:#121212;
+  cursor:pointer;
+  transition: opacity 0.15sec;
+  border: none;
+  border-radius: 5px;
+}
+.easy:hover{
+  opacity: 0.7;
+}
+.easy:active{
+  opacity: 0.4;
+}
+.medium{
+  background-color: orange;
+  color:#121212;
+  cursor:pointer;
+  transition: opacity 0.15sec;
+  border: none;
+  border-radius: 5px;
+}
+.medium:hover{
+  opacity: 0.7;
+}
+.medium:active{
+  opacity: 0.4;
+}
+.hard{
+  background-color: red;
+  color:#121212;
+  cursor:pointer;
+  transition: opacity 0.15sec; 
+  border: none;
+  border-radius: 5px;
+}
+.hard:hover{
+  opacity: 0.7;
+}
+.hard:active{
+  opacity: 0.4;
+}
+.reset{
+  background-color: aqua;
+  color: #121212;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.15sec;
+}
+.reset:hover{
+  opacity: 0.7;
+}
+.reset:active{
+  opacity: 0.4;
+}
+.violet{
+  background-color: #841592;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.15sec;
+}
+.violet:hover{
+  opacity: 0.7;
+}
+.violet:active{
+  opacity: 0.4;
+}
+input.cell.invalid {
+  background-color: #fdd !important;
+}
+
+body.dark-mode input.cell.invalid {
+  background-color: #662222 !important;
+}
+
+input.cell.valid {
+  background-color: #fff !important;
+}
+
+body.dark-mode input.cell.valid {
+  background-color: #2c2c2c !important; /* or choose a tint like #223322 */
+}
